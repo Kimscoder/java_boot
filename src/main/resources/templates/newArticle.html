@@ -32,12 +32,12 @@
     function submit_go(){
         var form = new FormData();
         form.append("title",document.querySelector("input[name='title']").value);
-        form.append("content",document.querySelector("textarea[name='content']".value);
+        form.append("content", document.querySelector("textarea[name='content']").value);
 
         fetch('new-article',{
             method:'POST',
             body:form
-            }).then((result)=>location.href="");
+            }).then((result)=>location.href="articles");
     }
 </script>
 </html>
